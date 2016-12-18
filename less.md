@@ -2,15 +2,17 @@
 ===
 引导表达式：
 
-  .mixin (@a) when (lightness(@a) >= 50%) {
-    background-color: black;
-  }
-  .mixin (@a) when (lightness(@a) < 50%) {
-    background-color: white;
-  }
-  .mixin (@a) {
-    color: @a;
-  }
+'''
+.mixin (@a) when (lightness(@a) >= 50%) {
+  background-color: black;
+}
+.mixin (@a) when (lightness(@a) < 50%) {
+  background-color: white;
+}
+.mixin (@a) {
+  color: @a;
+}
+'''
 
 when关键字用以定义一个导引序列(此例只有一个导引)。接下来我们运行下列代码：
 
